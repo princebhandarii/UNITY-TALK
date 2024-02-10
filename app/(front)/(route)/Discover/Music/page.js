@@ -226,8 +226,9 @@ function DiscoverPage() {
                 <h3 className="text-2xl font-bold">{title}</h3>
                 <br />
                 <span className="font-bold">
-                  By {channelTitle} At {publishedAt}
-                </span>
+  By {channelTitle.replace("'", "&apos;")} At {publishedAt.replace("'", "&apos;")}
+</span>
+
               </div>
             </div>
           </Link>
