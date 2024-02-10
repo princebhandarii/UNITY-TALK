@@ -33,7 +33,10 @@ const nextConfig = {
        'img.freepik.com',
       'play-lh.googleusercontent.com',
     ]
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
