@@ -14,36 +14,30 @@ import "../style.css"
 import Link from "next/link";
 
 export default function page() {
+  
   return (
-    <div
-      className="bg-[#23272A] place-self-center"
-      style={{ height: "850px", textAlign: "center" }}
-    >
+    <div className="bg-[#23272A] place-self-center">
       <Header />
       <div className=" pt-0">
-        <div
-          className=" selection:text-blue-300 text-5xl font-bold text-[#ebe4e4] pb-4 animate__animated animate__fadeInUp"
-          style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
-        >
-          IMAGINE A PLACE
-        </div>
-        <p className="text-2xl text-[#ebe4e4] pr-[20px] selection:text-blue-300 pb-6 animate__animated animate__fadeInUp motion-safe:animate__duration-1s">
-          ...where you can belong to a school club, a gaming group, or a
-          worldwideart community. <br />
-          Where just you and a handful of friends can spend time together. A
-          place that makes it easy
-          <br />
-          to talk every day and hang out more often.
-        </p>
+          <div
+            className=" selection:text-blue-300 text-2xl md:text-5xl  font-bold text-[#ebe4e4] animate__animated animate__fadeInUp text-center">
+            IMAGINE A PLACE
+          </div>
+          <p className="text-xl md:text-2xl text-[#ebe4e4]  selection:text-blue-300 pt-5 animate__animated animate__fadeInUp motion-safe:animate__duration-1s text-center">
+            ...where you can belong to a school club, a gaming group, or a
+            worldwideart community. <br />
+            Where just you and a handful of friends can spend time together. A
+            place that makes it easy
+            <br />
+            to talk every day and hang out more often.
+          </p>
 
-        <div className="flex justify-center items-center gap-4">
-          {/* <button className=" text-2xl w-[300px] btn btn-circle  bg-[#FFFFFF] hover:text-blue-400 text-black-500 ">
-            Download For Window
-          </button> */}
-          <div className="button" data-tooltip="Size: 500Kb">
-            <div className="button-wrapper">
-              <div className="text">Download For Window</div>
-              <span className="icon">
+        <div className="lg:flex  pt-4 justify-center items-center gap-4">
+          <div className="button" data-tooltip="Size: 50Kb">
+            <div className="button-wrapper" >
+              <div className="text ">Download For Window</div>
+              <a href="/logoQR.png" download="UNITY-TALK.png">
+               <span className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
@@ -63,13 +57,13 @@ export default function page() {
                   ></path>
                 </svg>
               </span>
+              </a>
+           
             </div>
           </div>
-          {/* <button className=" text-2xl w-[300px] btn btn-circle  bg-[#FFFFFF] hover:text-blue-400 text-black-500 ">
-            Open in Your Browser
-          </button> */}
+         
           <Link href="https://unity-talk.vercel.app/">
-            <div className="buttons">
+            <div className="buttons md:block hidden " >
               <div className="button-wrappers">
                 <button className="texts">Open in Your Browser</button>
                 <span className="icons">
@@ -134,126 +128,115 @@ export default function page() {
         </div>
       </div>
 
-      <div className="text-[#ebedef] pl-[1200px] relative flex-shrink-0 pt-16">
-        <Image
-          alt=""
-          src={home5}
-          className=" animate__animated animate__fadeInUp animate__delay-1s motion-safe:animate__duration-1s"
-        />
-        <Image
-        alt=""
+      <div className="text-[#ebedef] flex">
+      <Image
           src={home7}
-          className=" absolute left-0 bottom-0 animate__animated animate__fadeInUp animate__delay-1s motion-safe:animate__duration-1s"
+          className="animate__animated animate__fadeInUp animate__delay-1s motion-safe:animate__duration-1s"
         />
+        <Image
+          src={home5}
+          className="hidden md:block ml-auto animate__animated animate__fadeInUp animate__delay-1s motion-safe:animate__duration-1s"
+        />
+       
       </div>
 
       {/*Section 2*/}
 
-      <div className="flex items-center bg-white">
-        <Slide up>
-          <div className="pl-40 justify-end" style={{ paddingTop: "100px" }}>
-            <Image alt="" src={chatting} style={{ height: "650px", width: "650px" }} />
+      <div className="flex flex-col items-center bg-white md:flex-row"> {/* Use flex-column for mobile and flex-row for larger screens */}
+       <Slide up>
+          <div className="order-2 md:order-1 pl-8 md:pl-40 justify-end md:justify-start"> {/* Adjusted padding for mobile */}
+            <Image alt="" src={chatting}  />
           </div>
-          <div className=" ml-28 text-left pl-32 pt-8 selection:text-blue-300">
-            <h1 className="text-5xl font-bold text-[#010101]">
-              Create an invite-
-              <br />
-              only place where
-              <br />
-              you belong
-            </h1>
-            <p className="text-2xl text-[#0c0404] pt-7">
-              Unity Talk servers are organized <br />
-              into topic-based channels where <br />
-              you can collaborate, share,
-              <br />
-              and just talk about your day
-              <br />
-              without clogging up a group chat.
-            </p>
-          </div>
-        </Slide>
+              <div className="order-1 md:order-2 ml-4 md:ml-28 text-left pl-4 md:pl-32 pt-8 md:pt-0 selection:text-blue-300"> {/* Adjusted padding for mobile */}
+                <h1 className="text-3xl md:text-5xl font-bold text-[#010101]"> {/* Adjusted text size for mobile */}
+                  Create an invite-
+                  <br />
+                  only place where
+                  <br />
+                  you belong
+                </h1>
+                <p className="text-lg md:text-2xl text-[#0c0404] pt-5 md:pt-7"> {/* Adjusted text size for mobile */}
+                  Discord servers are organized <br />
+                  into topic-based channels where <br />
+                  you can collaborate, share,
+                  <br />
+                  and just talk about your day
+                  <br />
+                  without clogging up a group chat.
+                </p>
+              </div>
+         </Slide>
       </div>
 
+
+
       {/*Section 3*/}
-      <div className="flex items-center bg-[#23272A]">
+      <div className="flex flex-col items-center bg-[#23272A] md:flex-row"> {/* Use flex-column for mobile and flex-row for larger screens */}
         <Slide up>
-          <div className="ml-28 text-left pl-32 pt-8 selection:text-blue-300">
-            <h1 className="text-5xl font-bold text-white">
-              Where hanging
-              <br />
-              out is easy
-            </h1>
-            <p className="text-2xl text-white pt-7">
-              Grab a seat in a voice channel when you’re free. <br />
-              Friends in your server can see you’re around and <br />
-              instantly pop in to talk without having to call.
-            </p>
-          </div>
-          <div className="pl-40 justify-end" style={{ paddingTop: "100px" }}>
-            <Image
-            alt=""
-              src={vconnected}
-              style={{ height: "650px", width: "650px" }}
-            />
-          </div>
+            <div className="pb-5 order-2 md:order-1 ml-4 md:ml-28 text-left pl-4 md:pl-32 md:pt-0 selection:text-blue-300"> {/* Adjusted padding for mobile */}
+              <h1 className="text-3xl md:text-5xl font-bold text-white"> {/* Adjusted text size for mobile */}
+                Where hanging
+                <br />
+                out is easy
+              </h1>
+              <p className="text-lg md:text-2xl text-white pt-4 md:pt-7 w-80"> {/* Adjusted text size for mobile */}
+                Grab a seat in a voice channel when you’re free.
+                Friends in your server can see you’re around and 
+                instantly pop in to talk without having to call.
+              </p>
+            </div>
+            <div className="order-1 md:order-2 pl-8 md:pl-40 justify-end"> {/* Adjusted padding for mobile */}
+              <Image
+                src={vconnected}/>
+            </div>
         </Slide>
       </div>
 
       {/*Section 4*/}
-      <div className="flex items-center bg-white">
-        <Slide up>
-          <div className="pl-40 justify-end" style={{ paddingTop: "100px" }}>
-            <Image
-            alt=""
-              src={secation4}
-              style={{
-                height: "550px",
-                width: "550px",
-              }}
-            />
+
+      <div className="flex flex-col items-center bg-white md:flex-row"> {/* Use flex-column for mobile and flex-row for larger screens */}
+       <Slide up>
+          <div className="order-2 md:order-1 pl-8 md:pl-40 justify-end md:justify-start"> {/* Adjusted padding for mobile */}
+            <Image alt="" src={secation4}  />
           </div>
-          <div className="ml-28 text-left pl-32 pt-8 selection:text-blue-300">
-            <h1 className="text-5xl font-bold text-[#010101]">
-              From few to a <br /> fandom
-            </h1>
-            <p className="text-2xl text-[#0c0404] pt-7">
-              Get any community running with moderation
-              <br />
+              <div className="order-1 md:order-2 ml-4 md:ml-28 text-left pl-4 md:pl-32 pt-8 md:pt-0 selection:text-blue-300"> {/* Adjusted padding for mobile */}
+                <h1 className="text-3xl md:text-5xl font-bold text-[#010101]"> {/* Adjusted text size for mobile */}
+                  Create an invite-
+                  <br />
+                  only place where
+                  <br />
+                  you belong
+                </h1>
+                <p className="text-lg w-80 md:text-2xl text-[#0c0404] pt-5 md:pt-7"> {/* Adjusted text size for mobile */}
+                Get any community running with moderation
               tools and custom member access.
-              <br />
               Give members special powers,
-              <br />
               set up private channels, and more.
-            </p>
-          </div>
-        </Slide>
+                </p>
+              </div>
+         </Slide>
       </div>
-      <br />
 
       {/*Section 5*/}
-      <div className=" pt-0  bg-[#23272A]">
+      <div className="bg-[#23272A] text-center pt-8">
         <Slide up>
           <div
-            className="selection:text-blue-300 text-5xl font-bold text-[white] pb-4 "
-            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
-          >
+            className="selection:text-blue-300 md:text-5xl text-3xl font-bold text-[white] ">
             RELIABLE TECH FOR STAYING CLOSE
           </div>
-          <p className="text-2xl text-[white] pr-[20px] selection:text-blue-300 pb-6 ">
+          <p className="text-xl text-[white]  text-center pl-10 md:pl-80 selection:text-blue-300 pt-8 w-5/6">
             Low-latency voice and video feels like you’re in the same room. Wave
             hello over video, watch friends stream their games,
-            <br /> or gather up and have a drawing session with screen share.
+             or gather up and have a drawing session with screen share.
           </p>
 
           <div className="flex justify-center items-center gap-4">
             {" "}
             {/* Updated this line */}
             <Image
-            alt=""
               src={section5}
-              className="h-[600px] align-middle "
-              style={{ width: "800px" }}
+              className="align-middle "
+              
             />
           </div>
           <br />
@@ -267,6 +250,7 @@ export default function page() {
             <div className="button" data-tooltip="Size: 500Kb">
               <div className="button-wrapper">
                 <div className="text">Download For Window</div>
+                <a href="/logoQR.png" download="UNITY-TALK.png">
                 <span className="icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -287,6 +271,7 @@ export default function page() {
                     ></path>
                   </svg>
                 </span>
+                </a>
               </div>
             </div>
           </div>
@@ -294,7 +279,6 @@ export default function page() {
       </div>
 
       <Footer />
-      
     </div>
   );
 }
