@@ -13,30 +13,32 @@ import section5 from "../images/section5.png";
 import "../style.css"
 import Link from "next/link";
 
+
 export default function page() {
   
   return (
     <div className="bg-[#23272A] place-self-center">
       <Header />
-      <div className=" pt-0">
+      
           <div
             className=" selection:text-blue-300 text-2xl md:text-5xl  font-bold text-[#ebe4e4] animate__animated animate__fadeInUp text-center">
             IMAGINE A PLACE
           </div>
-          <p className="text-xl md:text-2xl text-[#ebe4e4]  selection:text-blue-300 pt-5 animate__animated animate__fadeInUp motion-safe:animate__duration-1s text-center">
+          <p className="md:w-4/5 md:pl-64 text-xl md:text-2xl text-[#ebe4e4]  selection:text-blue-300 pt-5 animate__animated animate__fadeInUp motion-safe:animate__duration-1s text-center">
             ...where you can belong to a school club, a gaming group, or a
-            worldwideart community. <br />
+            worldwideart community. 
             Where just you and a handful of friends can spend time together. A
             place that makes it easy
-            <br />
             to talk every day and hang out more often.
           </p>
+          
 
-        <div className="lg:flex  pt-4 justify-center items-center gap-4">
+        <div className="flex pt-4 justify-center items-center gap-4">
+
           <div className="button" data-tooltip="Size: 50Kb">
             <div className="button-wrapper" >
               <div className="text ">Download For Window</div>
-              <a href="/UNITY-TALK.png" download="UNITY-TALK.png">
+            <a href="/UNITY-TALK.png" download="UNITY-TALK.png">
                <span className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +128,7 @@ export default function page() {
             </div>
           </Link>
         </div>
-      </div>
+      
 
       <div className="text-[#ebedef] flex">
       <Image
@@ -137,8 +139,11 @@ export default function page() {
           src={home5}
           className="hidden md:block ml-auto animate__animated animate__fadeInUp animate__delay-1s motion-safe:animate__duration-1s"
         />
+        
        
       </div>
+      
+      
 
       {/*Section 2*/}
 
@@ -148,20 +153,16 @@ export default function page() {
             <Image alt="" src={chatting}  />
           </div>
               <div className="order-1 md:order-2 ml-4 md:ml-28 text-left pl-4 md:pl-32 pt-8 md:pt-0 selection:text-blue-300"> {/* Adjusted padding for mobile */}
-                <h1 className="text-3xl md:text-5xl font-bold text-[#010101]"> {/* Adjusted text size for mobile */}
-                  Create an invite-
-                  <br />
+                <h1 className="text-3xl lg:w-96 md:text-5xl font-bold text-[#010101]"> {/* Adjusted text size for mobile */}
+                  Create an invite
                   only place where
-                  <br />
                   you belong
                 </h1>
-                <p className="text-lg md:text-2xl text-[#0c0404] pt-5 md:pt-7"> {/* Adjusted text size for mobile */}
-                  Discord servers are organized <br />
-                  into topic-based channels where <br />
+                <p className="text-lg lg:w-96 md:text-2xl text-[#0c0404] pt-5 md:pt-7"> {/* Adjusted text size for mobile */}
+                  Unity Talk servers are organized 
+                  into topic-based channels where 
                   you can collaborate, share,
-                  <br />
                   and just talk about your day
-                  <br />
                   without clogging up a group chat.
                 </p>
               </div>
@@ -174,9 +175,8 @@ export default function page() {
       <div className="flex flex-col items-center bg-[#23272A] md:flex-row"> {/* Use flex-column for mobile and flex-row for larger screens */}
         <Slide up>
             <div className="pb-5 order-2 md:order-1 ml-4 md:ml-28 text-left pl-4 md:pl-32 md:pt-0 selection:text-blue-300"> {/* Adjusted padding for mobile */}
-              <h1 className="text-3xl md:text-5xl font-bold text-white"> {/* Adjusted text size for mobile */}
+              <h1 className="lg:w-96 text-3xl md:text-5xl font-bold text-white"> {/* Adjusted text size for mobile */}
                 Where hanging
-                <br />
                 out is easy
               </h1>
               <p className="text-lg md:text-2xl text-white pt-4 md:pt-7 w-80"> {/* Adjusted text size for mobile */}
@@ -200,12 +200,8 @@ export default function page() {
             <Image alt="" src={secation4}  />
           </div>
               <div className="order-1 md:order-2 ml-4 md:ml-28 text-left pl-4 md:pl-32 pt-8 md:pt-0 selection:text-blue-300"> {/* Adjusted padding for mobile */}
-                <h1 className="text-3xl md:text-5xl font-bold text-[#010101]"> {/* Adjusted text size for mobile */}
-                  Create an invite-
-                  <br />
-                  only place where
-                  <br />
-                  you belong
+                <h1 className="lg:w-96 text-3xl md:text-5xl font-bold text-[#010101]"> {/* Adjusted text size for mobile */}
+                From few to a fandom
                 </h1>
                 <p className="text-lg w-80 md:text-2xl text-[#0c0404] pt-5 md:pt-7"> {/* Adjusted text size for mobile */}
                 Get any community running with moderation
@@ -247,7 +243,7 @@ export default function page() {
           <br />
           <br />
           <div className="flex justify-center items-center gap-4">
-            <div className="button" data-tooltip="Size: 500Kb">
+            <div className="button" data-tooltip="Size: 50Kb">
               <div className="button-wrapper">
                 <div className="text">Download For Window</div>
                 <a href="/UNITY-TALK.png" download="UNITY-TALK.png">
