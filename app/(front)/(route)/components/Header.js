@@ -35,7 +35,7 @@ export default function Header() {
               {" "}
               <Link
                 href="/Download"
-                className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Download
               </Link>
@@ -44,7 +44,7 @@ export default function Header() {
               {" "}
               <Link
                 href="/Nitro"
-                className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Nitro
               </Link>
@@ -53,7 +53,7 @@ export default function Header() {
               {" "}
               <Link
                 href="/Discover"
-                className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Discover
               </Link>
@@ -62,7 +62,7 @@ export default function Header() {
               {" "}
               <Link
                 href="/Safety"
-                className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Safety
               </Link>
@@ -70,7 +70,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Support
               </Link>
@@ -79,7 +79,7 @@ export default function Header() {
               {" "}
               <Link
                 href="/"
-                className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Blog
               </Link>
@@ -87,7 +87,7 @@ export default function Header() {
             <li>
               <Link
                 href="/Home"
-                className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Careers
               </Link>
@@ -98,7 +98,7 @@ export default function Header() {
        <Link href="/Home">
           <Image
             src={logo}
-            className="w-30 h-[120px] object-contain "
+            className="no-underline w-30 h-[120px] object-contain "
             alt=""
           />
         </Link>
@@ -110,7 +110,7 @@ export default function Header() {
             {" "}
             <Link
               href="/Download"
-              className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Download
             </Link>
@@ -119,7 +119,7 @@ export default function Header() {
             {" "}
             <Link
               href="/Nitro"
-              className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Nitro
             </Link>
@@ -128,7 +128,7 @@ export default function Header() {
             {" "}
             <Link
               href="/Discover"
-              className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Discover
             </Link>
@@ -137,7 +137,7 @@ export default function Header() {
             {" "}
             <Link
               href="/Safety"
-              className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Safety
             </Link>
@@ -145,7 +145,7 @@ export default function Header() {
           <li>
             <Link
               href="/"
-              className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Support
             </Link>
@@ -154,7 +154,7 @@ export default function Header() {
             {" "}
             <Link
               href="/"
-              className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Blog
             </Link>
@@ -162,7 +162,7 @@ export default function Header() {
           <li>
             <Link
               href="/"
-              className="link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Careers
             </Link>
