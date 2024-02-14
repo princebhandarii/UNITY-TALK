@@ -32,7 +32,7 @@ export default function Download() {
             <p className="lg:pl-32 lg:w-4/5 pt-8 text-2xl text-white selection:text-blue-400 ">
               Whether you’re part of a school club, gaming group, worldwide art
               community, or just a handful of friends that want to spend time
-              together, Discord makes it easy to talk every day and hang out
+              together, Unity Talk makes it easy to talk every day and hang out
               more often.
             </p>
 
