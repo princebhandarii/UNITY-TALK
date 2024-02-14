@@ -36,7 +36,7 @@ export default function page() {
           <div className="button" data-tooltip="Size: 50Kb">
             <div className="button-wrapper" >
               <div className="text ">Download For Window</div>
-              <a href="/logoQR.png" download="UNITY-TALK.png">
+              <a href="/UNITY-TALK.png" download="UNITY-TALK.png">
                <span className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@ export default function page() {
             <div className="button" data-tooltip="Size: 500Kb">
               <div className="button-wrapper">
                 <div className="text">Download For Window</div>
-                <a href="/logoQR.png" download="UNITY-TALK.png">
+                <a href="/UNITY-TALK.png" download="UNITY-TALK.png">
                 <span className="icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
