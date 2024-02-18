@@ -61,7 +61,7 @@ export default function Download() {
         </div>
       </div>
 
-      <div className="lg:flex lg:pl-36">
+      <div className="lg:flex lg:pl-36 bg-white">
         <div>
           <Slide up>
             <div className="pt-12 lg:pl-48 flex bg-[#FFFFFF]">
