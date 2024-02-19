@@ -246,12 +246,12 @@ export default function page() {
                             <div className="flex pt-[50px] lg:pt-[50px]">
                                 <p className="font-bold text-2xl text-black lg:pt-[30px] lg:pl-[80px]">Features</p>
 
-                                <span className="lg:pr-[80px] pl-[90px]">
+                                <span className="lg:pr-[80px] pl-14">
                                     <p className="font-bold lg:text-4xl text-2xl text-black  lg:pt-[30px] lg:pl-[60px]">NITRO</p>
                                     <p className="font-bold lg:text-2xl text-xl text-black lg:pt-[3px] lg:pl-[80px]">Basic</p>
                                 </span>
 
-                                <span className="lg:pr-[50px] pl-[15px] ">
+                                <span className="lg:pr-[50px] pl-3 ">
                                     <p className="font-bold lg:text-4xl text-2xl text-black lg:pt-[30px] lg:pl-[55px]">NITRO</p>
                                     <p className="font-bold lg:text-2xl text-xl text-black lg:pt-[3px] lg:pl-[80px] ">Plus</p>
                                 </span>
