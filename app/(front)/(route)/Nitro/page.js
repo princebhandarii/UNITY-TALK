@@ -553,7 +553,7 @@ export default function page() {
       </div>
 
       <div className="flex lg:content-center">
-        <h1 className="mt-36 lg:pl-44 font-bold lg:text-5xl text-2xl text-black ">
+        <h1 className="mt-36 lg:pl-44 font-bold lg:text-5xl text-2xl text-black pl-3 ">
           Frequently Asked Questions?
         </h1>
         <Image className="ml-auto" src={n4} alt="" />
