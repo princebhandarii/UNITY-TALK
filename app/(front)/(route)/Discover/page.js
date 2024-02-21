@@ -532,8 +532,8 @@ function DiscoverPage() {
           <details className="collapse bg-base-200">
             <summary className="collapse-title text-xl font-medium ">
               <div className="flex justify-center">
-                <div> Categories</div>
-                <div>
+                <div className="text-white"> Categories</div>
+                <div className="bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="34"
