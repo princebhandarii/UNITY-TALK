@@ -17,7 +17,7 @@ const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
 const ITEMS_PER_PAGE = 5;
 
-export default function DiscoverPage() {
+export default function EntertainmentPage() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
@@ -136,7 +136,7 @@ export default function DiscoverPage() {
             <summary className="collapse-title text-xl font-medium ">
               <div className="flex justify-center">
                 <div className="text-black"> Categories</div>
-                <div >
+                <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="34"
@@ -149,7 +149,7 @@ export default function DiscoverPage() {
                 </div>
               </div>
             </summary>
-            <div className="collapse-content lg:bg-base-200 text-black pt-">
+            <div className="collapse-content lg:bg-white text-black pt-">
               <ul className="menu p-4 w-80 min-h-full bg-base-200 text-xl">
                 {/* Sidebar content here */}
                 <li>
@@ -546,7 +546,7 @@ export default function DiscoverPage() {
                   <button
                     key={i + 1}
                     onClick={() => setCurrentPage(i + 1)}
-                    className={`mr-2 px-5 lg:px-3 py-2 hover:bg-blue-500 border ${
+                    className={`mr-2 px-5 lg:px-3 py-2 text-black hover:bg-blue-500 border ${
                       currentPage === i + 1 ? "bg-gray-300" : ""
                     }`}
                   >
