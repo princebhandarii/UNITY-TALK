@@ -13,7 +13,7 @@ import "animate.css/animate.min.css";
 const YOUTUBE_PLAYLIST_ITEMS_API =
   "https://youtube.googleapis.com/youtube/v3/search";
 const YOUTUBE_PLAYLISTID = "UCeVMnSShP_Iviwkknt83cww";
-//const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 //const apiKey = "AIzaSyCbE0JrJgGRY7EChweBwtK8YxuV16u5d5E";
 const ITEMS_PER_PAGE = 5;
 
@@ -789,8 +789,8 @@ function DiscoverPage() {
 
         {/* this is end navigation in mobile */}
 
-        <div className="lg:pl-10 lg:pt-10  bg-white">
-          <div className="lg:flex pl-[500px] md:block hidden">
+        <div className="lg:pl-5 lg:pt-10  bg-white">
+          <div className="lg:flex lg:pl-[400px]  md:block hidden">
             <svg
               width="35px"
               height="35px"
@@ -811,7 +811,7 @@ function DiscoverPage() {
             <h1 className="text-4xl font-bold text-black">All</h1>
           </div>
 
-          <div className="lg:hidden text-center font-bold text-black text-4xl flex pt-8 pl-32">
+          <div className="lg:hidden text-center font-bold text-black text-4xl flex pt-8 lg:pr-20 pl-32">
             <div>
               <svg
                 width="35px"
@@ -833,7 +833,7 @@ function DiscoverPage() {
             <h1 className="text-4xl font-bold text-black">All</h1>
           </div>
 
-          <div className="lg:pl-56 pl-36 pt-3 text-2xl">
+          <div className="lg:pl-96 pl-36 pt-3 text-2xl">
             {loading && (
               <div>
                 <span className="loading loading-spinner loading-lg"></span>
