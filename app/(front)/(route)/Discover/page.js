@@ -533,7 +533,7 @@ function DiscoverPage() {
             <summary className="collapse-title text-xl font-medium ">
               <div className="flex justify-center">
                 <div className="text-black"> Categories</div>
-                <div >
+                <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="34"
@@ -947,7 +947,7 @@ function DiscoverPage() {
                   <button
                     key={i + 1}
                     onClick={() => setCurrentPage(i + 1)}
-                    className={`mr-2 px-5 lg:px-3 py-2 hover:bg-blue-500 border ${
+                    className={`mr-2 px-5 lg:px-3 py-2  hover:bg-blue-500 border ${
                       currentPage === i + 1 ? "bg-gray-300" : ""
                     }`}
                   >
