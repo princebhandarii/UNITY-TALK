@@ -532,8 +532,8 @@ function DiscoverPage() {
           <details className="collapse bg-base-200">
             <summary className="collapse-title text-xl font-medium ">
               <div className="flex justify-center">
-                <div className="text-white"> Categories</div>
-                <div className="bg-white">
+                <div className="text-black"> Categories</div>
+                <div >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="34"
@@ -547,7 +547,7 @@ function DiscoverPage() {
               </div>
             </summary>
             <div className="collapse-content">
-              <ul className="menu p-4 w-80 min-h-full bg-white text-black text-xl">
+              <ul className="menu p-4 w-80 min-h-full bg-base-200 text-black text-xl">
                 {/* Sidebar content here */}
                 <li>
                   <Link href="/Discover">
