@@ -11,7 +11,7 @@ import vc5 from "../images/vc5.png";
 import windows from "../images/windows.png";
 import { DownloadIcon } from "@heroicons/react/outline";
 import Footer from "../components/Footer";
-import "../style.css"
+import "../style.css";
 
 export default function Download() {
   return (
@@ -21,22 +21,22 @@ export default function Download() {
         <div className="lg:flex shrink-0 mr-4">
           <Image
             src={vc}
-            className="object-contain py-5 animate-bounce infinite "
+            className="object-contain py-5 animate-bounce infinite pt-20 "
             alt=""
           />
-          <div className="pt-12">
-            <span className="lg:pl-56  text-5xl text-white font-bold mb-4 selection:text-blue-400">
+          <div className="pt-2">
+            <span className="lg:pl-56 text-5xl text-white font-bold mb-4 selection:text-blue-400">
               YOUR PLACE TO TALK
             </span>
 
-            <p className="lg:pl-32 lg:w-4/5 pt-8 text-2xl text-white selection:text-blue-400 ">
+            <p className="lg:pl-32 pl-2 lg:w-4/5 pt-8 text-2xl text-white selection:text-blue-400 font-mono ">
               Whether you’re part of a school club, gaming group, worldwide art
               community, or just a handful of friends that want to spend time
               together, Unity Talk makes it easy to talk every day and hang out
               more often.
             </p>
 
-            <div className="pt-14 flex lg:pl-44 ">
+            <div className="pt-14 flex lg:pl-44 lg:pb-5">
               <a href="/UNITY-TALK.png" download="UNITY-TALK.png">
                 <button className="bg-white p-4 ml-9 text-black w-60 font-medium flex items-center justify-center rounded-full text-lg hover:shadow-2xl hover:text-discord_blurple hover:bg-[#586671] hover:text-white focus:outline-none transition duration-200 ease-in-out select-none">
                   <DownloadIcon className="w-6 mr-2" />
@@ -61,7 +61,7 @@ export default function Download() {
         </div>
       </div>
 
-      <div className="lg:flex lg:pl-36 bg-white">
+      <div className="lg:flex  bg-white">
         <div>
           <Slide up>
             <div className="pt-12 lg:pl-48 flex bg-[#FFFFFF]">
@@ -88,7 +88,7 @@ export default function Download() {
               </div>
             </div>
 
-            <div className="pt-36 lg:pl-48 flex bg-[#FFFFFF] ">
+            <div className="lg:pt-36 pt-10 lg:pl-48 flex bg-[#FFFFFF] ">
               <div className="card  bg-[#F6F6F6] text-center transform transition duration-500 ease-in-out hover:-rotate-3">
                 <div className="card-body">
                   <h2 className="text-center text-3xl font-bold  text-black ">
@@ -114,7 +114,7 @@ export default function Download() {
           </Slide>
         </div>
 
-        <div className="pt-36 bg-[#FFFFFF]">
+        <div className="lg:pt-36 bg-[#FFFFFF]">
           <Slide up>
             <div className="pt-12 lg:pl-20 flex bg-[#FFFFFF] ">
               <div className="card  bg-[#F6F6F6] text-center transform transition duration-500 ease-in-out hover:rotate-3">
@@ -140,7 +140,7 @@ export default function Download() {
               </div>
             </div>
 
-            <div className="pt-36 lg:pl-20 flex bg-[#FFFFFF] ">
+            <div className="lg:pt-36 pt-10 lg:pl-20 flex bg-[#FFFFFF] pb-5">
               <div className="card  bg-[#F6F6F6] text-center transform transition duration-500 ease-in-out hover:rotate-3">
                 <div className="card-body">
                   <h2 className="text-center text-3xl font-bold  text-black ">
