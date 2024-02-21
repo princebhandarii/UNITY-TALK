@@ -10,6 +10,7 @@ import "../style.css";
 import Image from "next/image";
 import "animate.css/animate.min.css";
 
+
 const YOUTUBE_PLAYLIST_ITEMS_API =
   "https://youtube.googleapis.com/youtube/v3/search";
 const YOUTUBE_PLAYLISTID = "UCeVMnSShP_Iviwkknt83cww";
