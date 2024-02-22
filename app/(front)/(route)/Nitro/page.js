@@ -79,7 +79,7 @@ export default function page() {
     <div>
       <div className="bg-[#23272A] ">
         <Header />
-        <div className="lg:flex lg:h-96">
+        {/* <div className="lg:flex lg:h-96">
           <div className="lg:pt-32 ">
             <h1 className="text-5xl pl-2 lg:pl-16 text-white font-bold selection:text-blue-400 font-serif">
               UNLEASH MORE FUN WITH NITRO
@@ -90,6 +90,25 @@ export default function page() {
             </h2>
           </div>
           <div className="lg:pr-40">
+            <Image
+              src={n1}
+              className="h-72 w-72 motion-image justify-end "
+              alt=""
+            />
+          </div>
+        </div> */}
+        <div className="lg:flex">
+          <div className="lg:w-2/4">
+            <h1 className="text-5xl font-bold text-white pl-2 lg:pl-20 pt-20">
+              UNLEASH MORE FUN WITH NITRO
+            </h1>
+
+            <p className="text-white pt-4 text-xl  pl-2 lg:pl-20 font-mono">
+              Subscribe to Nitro to upgrade your emoji, personalize your
+              profile, create AI generated images, and so much more.
+            </p>
+          </div>
+          <div className="lg:pl-64">
             <Image
               src={n1}
               className="h-72 w-72 motion-image justify-end "
