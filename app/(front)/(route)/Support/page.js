@@ -156,56 +156,55 @@ export default function Page() {
         </div>
         <div className="carousel-container  text-black  pt-[500px] lg:pt-20 hidden md:block ">
           <Slider {...settings}>
-            <div className="card lg:w-64  glass bg-red-300 ">
+            <div className="card  glass bg-red-300 ">
               <figure>
                 <Image src={chat} alt="car!" />
               </figure>
-              <div className="lg:card-body pt-10 lg:h-24 h-32  ">
-                <h2 className="lg:card-title  lg:text-xl lg:pl-20">Chatting</h2>
+              <div className="card-body lg:h-24 items-center  ">
+                <h2 className="card-title text-xl ">Chatting</h2>
               </div>
             </div>
 
-            <div className="card lg:w-64  glass shadow-sm bg-red-800 ">
+            <div className="card  glass bg-red-800 ">
               <figure>
                 <Image src={game} alt="car!" />
               </figure>
-              <div className="lg:card-body pt-10 lg:h-24 h-24 w-24 ">
-                <h2 className="card-title lg:text-xl lg:pl-20">Gaming</h2>
+              <div className="card-body lg:h-24 items-center  ">
+                <h2 className="card-title text-xl ">Gaming</h2>
               </div>
             </div>
 
-            <div className="card w-64 glass shadow-sm bg-yellow-600">
+            <div className="card  glass bg-yellow-600 ">
               <figure>
                 <Image src={call} alt="car!" />
               </figure>
-              <div className="lg:card-body pt-10 lg:h-24 h-24 w-24 text-center">
-                <h2 className="card-title lg:text-xl lg:pl-20">
-                  Video Calling
-                </h2>
+              <div className="card-body lg:h-24 items-center  ">
+                <h2 className="card-title text-xl ">Video Calling</h2>
               </div>
             </div>
 
-            <div className="card lg:w-60  glass shadow-sm bg-[#FFE6E6]">
+            <div className="card  glass bg-[#FFE6E6]">
               <figure>
                 <Image src={ai} alt="car!" />
               </figure>
-              <div className="lg:card-body pt-10 lg:h-24 h-24 w-24 text-center">
-                <h2 className="card-title lg:text-xl lg:pl-20">
+              <div className="card-body lg:h-24 items-center  ">
+                <h2 className="card-title text-xl pl-12 ">
                   Artificial Intelligence
                 </h2>
               </div>
             </div>
 
-            <div className="card w-64 glass shadow-sm bg-slate-600">
+            <div className="card  glass bg-slate-600">
               <figure>
                 <Image src={privcy} alt="car!" />
               </figure>
-              <div className="lg:card-body pt-10 lg:h-24 h-24 w-24 text-center">
-                <h2 className="card-title lg:text-xl lg:pl-20 ">Privacy</h2>
+              <div className="card-body lg:h-24 items-center  ">
+                <h2 className="card-title text-xl ">Privacy</h2>
               </div>
             </div>
           </Slider>
         </div>
+        {/* this is for mobile */}
         <div className="pt-[500px] lg:hidden ">
           <div className="h-96 carousel carousel-vertical rounded-box relative">
             <div className="carousel-item h-full group relative">
