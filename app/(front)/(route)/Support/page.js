@@ -26,8 +26,8 @@ export default function Page() {
 
     emailjs
       .sendForm(
-        "service_oca7c0v",
-        "template_8oikmqd",
+        "service_h65iktg",
+        "template_ygeeigq",
         form.current,
         "5Fzhb45Zp1gGGcW1M"
       )
@@ -35,6 +35,7 @@ export default function Page() {
         (result) => {
           console.log(result.text);
           alert("Email sent successfully");
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -126,11 +127,12 @@ export default function Page() {
                 <input
                   type="text"
                   placeholder="Your Email"
-                  name="user_email"
+                  name="email_id"
                   className="input input-bordered w-full text-lg mt-[10px] text-black fade-in-text"
                 />
                 <input
                   type="text"
+                  u
                   placeholder="Your Name"
                   name="user_name"
                   className="input input-bordered w-full text-lg mt-[10px] text-black fade-in-text"
@@ -138,6 +140,7 @@ export default function Page() {
                 <input
                   type="text"
                   placeholder="Your Subject"
+                  name="subject"
                   className="input input-bordered w-full text-lg mt-[10px] text-black fade-in-text"
                 />
                 <textarea
