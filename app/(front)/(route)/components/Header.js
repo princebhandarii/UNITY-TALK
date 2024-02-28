@@ -3,14 +3,11 @@ import Image from "next/image";
 import logo from "../images/logoss1.png";
 import Link from "next/link";
 
-
 export default function Header() {
   return (
-   
     <div className="navbar ">
       <div className="navbar-start">
-        <div className="dropdown "  style={{color:"white"}}>
-      
+        <div className="dropdown " style={{ color: "white" }}>
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,20 +72,10 @@ export default function Header() {
                 Support
               </Link>
             </li>
-            <li>
-              {" "}
-              <Link
-                href="/"
-                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
-              >
-                Avtar
-              </Link>
-            </li>
-           
           </ul>
         </div>
-        
-       <Link href="/Home">
+
+        <Link href="/Home">
           <Image
             src={logo}
             className="no-underline w-30 h-[120px] object-contain "
@@ -143,26 +130,19 @@ export default function Header() {
               Support
             </Link>
           </li>
-          <li>
-            {" "}
-            <Link
-              href="/"
-              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
-            >
-              Avtar
-            </Link>
-          </li>
-        
-           
-          </li>
         </ul>
       </div>
       <div className="navbar-end">
-    <div>
-    <Link href="https://unity-talk.vercel.app/"><button className="button2 md:w-40 lg:w-48 xl:w-56" style={{height:"50px",width:"140px"}}>Login</button></Link>
-
-    </div>
-
+        <div>
+          <Link href="https://unity-talk.vercel.app/">
+            <button
+              className="button2 md:w-40 lg:w-48 xl:w-56"
+              style={{ height: "50px", width: "140px" }}
+            >
+              Login
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
