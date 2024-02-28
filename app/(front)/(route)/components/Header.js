@@ -69,7 +69,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="/"
+                href="/Support"
                 className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
                 Support
@@ -81,17 +81,10 @@ export default function Header() {
                 href="/"
                 className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
               >
-                Blog
+                Avtar
               </Link>
             </li>
-            <li>
-              <Link
-                href="/Home"
-                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
-              >
-                Careers
-              </Link>
-            </li>
+           
           </ul>
         </div>
         
@@ -144,7 +137,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/Support"
               className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
               Support
@@ -156,16 +149,10 @@ export default function Header() {
               href="/"
               className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
             >
-              Blog
+              Avtar
             </Link>
           </li>
-          <li>
-            <Link
-              href="/"
-              className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
-            >
-              Careers
-            </Link>
+        
            
           </li>
         </ul>
