@@ -21,7 +21,8 @@ export default authMiddleware({
     "/Discover/Entertainment",
     "/Discover/Music",
     "/Discover/News",
-    "/Safety"
+    "/Safety",
+   "/Support"
   ]
 });
  
