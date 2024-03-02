@@ -103,7 +103,25 @@ export default function Page() {
           </animated.div>
         </div>
       </div>
-      <div className="relative lg:pt-9 pb-5">
+      <div className="text-center">
+        <h2 className="font-bold text-3xl text-black fade-in-text font-mono pt-10">
+          Your Friendly Chatbot Companion for Support and Guidance
+        </h2>
+        <p className="text-5xl">🤖</p>
+      </div>
+
+      <div class=" justify-center pt-10">
+        <div class="mx-auto lg:w-1/2">
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/QsCZb9UgTiq-AHibHA-8x"
+            title="Unity Talk ChatBot"
+            width="100%"
+            style={{ height: "100%", minHeight: "700px" }}
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <div className="relative lg:pt-20 pb-5">
         <div className=" text-center pt-5 pb-4 ">
           <h2 className="font-bold text-5xl text-black fade-in-text font-mono">
             Need help? We've got your back.
@@ -114,7 +132,7 @@ export default function Page() {
             Email Box
           </p>
         </div>
-        <div className=" flex items-center justify-center lg:pt-24 pt-10">
+        <div className=" flex items-center justify-center lg:pt-16 pt-10">
           <div className=" relative card lg:w-[700px] lg:h-[500px] bg-base-100 shadow-xl image-full   w-[300px] h-[50px] ">
             <figure>
               <Image src={c1} alt="" className="object-cover w-full h-full" />
@@ -157,7 +175,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="carousel-container  text-black  pt-[500px] lg:pt-20 hidden md:block ">
+        <div className="carousel-container  text-black  pt-[490px] lg:pt-20 hidden md:block ">
           <Slider {...settings}>
             <div className="card  glass bg-red-300 ">
               <figure>
