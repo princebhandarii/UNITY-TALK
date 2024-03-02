@@ -36,7 +36,7 @@ export default function page() {
               Here, you can generate ai based boy profile picture
             </p>
             <div className="card-actions justify-center ">
-              <Link href="/Nitro#nitro">
+              <Link href="/AI">
                 <button className="btn btn-primary">Generate</button>
               </Link>
             </div>
@@ -57,7 +57,7 @@ export default function page() {
               Here, you can generate ai based boy profile picture
             </p>
             <div className="card-actions justify-center">
-              <Link href="/Nitro#nitro">
+              <Link href="/AI">
                 <button className="btn btn-primary">Generate</button>
               </Link>
             </div>
@@ -78,7 +78,7 @@ export default function page() {
               Here, you can generate ai based boy profile picture
             </p>
             <div className="card-actions justify-center">
-              <Link href="/Nitro#nitro">
+              <Link href="/AI">
                 <button className="btn btn-primary">Generate</button>
               </Link>
             </div>
@@ -99,7 +99,7 @@ export default function page() {
               Here, you can generate ai based girl profile picture
             </p>
             <div className="card-actions justify-center">
-              <Link href="/Nitro#nitro">
+              <Link href="/AI">
                 <button className="btn btn-primary">Generate</button>
               </Link>
             </div>
@@ -120,7 +120,7 @@ export default function page() {
               Here, you can generate ai based animals picture
             </p>
             <div className="card-actions justify-center">
-              <Link href="/Nitro#nitro">
+              <Link href="/AI">
                 <button className="btn btn-primary">Generate</button>
               </Link>
             </div>
@@ -141,7 +141,7 @@ export default function page() {
               Here, you can generate ai based Dog profile picture
             </p>
             <div className="card-actions justify-center">
-              <Link href="/Nitro#nitro">
+              <Link href="/AI">
                 <button className="btn btn-primary">Generate</button>
               </Link>
             </div>
