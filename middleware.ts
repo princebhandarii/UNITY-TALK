@@ -23,7 +23,8 @@ export default authMiddleware({
     "/Discover/News",
     "/Safety",
    "/Support",
-   "/Avtar"
+   "/Avtar",
+   "/AI"
   ]
 });
  
