@@ -562,3 +562,19 @@
   transition: all 1s;
 }
 
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
+}
+
+.animate-zoom-in-out {
+  animation: zoom-in-out 3s infinite alternate; /* Adjust timing as needed */
+}
