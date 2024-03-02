@@ -22,7 +22,8 @@ export default authMiddleware({
     "/Discover/Music",
     "/Discover/News",
     "/Safety",
-   "/Support"
+   "/Support",
+   "/Avtar"
   ]
 });
  
