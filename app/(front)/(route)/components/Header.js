@@ -72,6 +72,14 @@ export default function Header() {
                 Support
               </Link>
             </li>
+                  <li>
+              <Link
+                href="/Avtar"
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              >
+                Avtar
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -130,6 +138,14 @@ export default function Header() {
               Support
             </Link>
           </li>
+                  <li>
+              <Link
+                href="/Avtar"
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              >
+                Avtar
+              </Link>
+            </li>
         </ul>
       </div>
       <div className="navbar-end">
