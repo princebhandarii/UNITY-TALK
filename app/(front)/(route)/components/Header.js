@@ -37,15 +37,15 @@ export default function Header() {
                 Download
               </Link>
             </li>
-            // <li>
-            //   {" "}
-            //   <Link
-            //     href="/Nitro"
-            //     className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
-            //   >
-            //     Nitro
-            //   </Link>
-            // </li>
+            {/* <li>
+              {" "}
+              <Link
+                href="/Nitro"
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              >
+                Nitro
+              </Link>
+            </li> */}
             <li>
               {" "}
               <Link
@@ -103,15 +103,15 @@ export default function Header() {
               Download
             </Link>
           </li>
-          // <li>
-          //   {" "}
-          //   <Link
-          //     href="/Nitro"
-          //     className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
-          //   >
-          //     Nitro
-          //   </Link>
-          // </li>
+         {/* <li>
+              {" "}
+              <Link
+                href="/Nitro"
+                className="no-underline link  hover:text-blue-500 hover:border-spacing-2 transition duration-300 "
+              >
+                Nitro
+              </Link>
+            </li> */}
           <li>
             {" "}
             <Link
