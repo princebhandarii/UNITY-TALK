@@ -32,6 +32,8 @@ const nextConfig = {
        'th.bing.com', 
        'img.freepik.com',
       'play-lh.googleusercontent.com',
+      "oaidalleapiprodscus.blob.core.windows.net",
+      "oaidalleapiprodscus.blob.core.windows.net"
     ]
   },
   eslint: {
