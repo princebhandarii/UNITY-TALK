@@ -222,6 +222,13 @@ export default function page() {
               modify photographs, create realistic artwork, or even generate
               entirely new images based on given parameters or inputs.
             </p>
+            <div className="pt-9 text-center">
+              <Link href="/AI">
+                <button className="btn btn-primary h-10 w-52 text-xl">
+                  Generate
+                </button>
+              </Link>
+            </div>
           </div>
           <div className="ml-12 lg:hidden">
             <Image
@@ -245,6 +252,14 @@ export default function page() {
             height={300}
             className="mb-24 pt-8"
           />
+
+          <div className="pb-5 text-center">
+            <Link href="/AI">
+              <button className="btn btn-primary h-10 w-52 text-xl">
+                Generate
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="hidden lg:block bg-[#23272A] lg:w-full lg:h-[500px] w-full h-[600px] ">
           <Carousel
@@ -265,6 +280,7 @@ export default function page() {
           <div className="lg:mx-auto lg:mt-8 lg:w-1/2 lg:flex lg:justify-around"></div>
         </div>
       </div>
+
       <div className="pt-20">
         <Footer />
       </div>
