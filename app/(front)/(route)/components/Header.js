@@ -37,7 +37,7 @@ export default function Header() {
                 Download
               </Link>
             </li>
-            {/* <li>
+            <li>
               {" "}
               <Link
                 href="/Nitro"
@@ -45,7 +45,7 @@ export default function Header() {
               >
                 Nitro
               </Link>
-            </li> */}
+            </li> 
             <li>
               {" "}
               <Link
@@ -103,7 +103,7 @@ export default function Header() {
               Download
             </Link>
           </li>
-         {/* <li>
+         <li>
               {" "}
               <Link
                 href="/Nitro"
@@ -111,7 +111,7 @@ export default function Header() {
               >
                 Nitro
               </Link>
-            </li> */}
+            </li> 
           <li>
             {" "}
             <Link
