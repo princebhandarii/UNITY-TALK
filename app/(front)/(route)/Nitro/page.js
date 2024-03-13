@@ -15,8 +15,18 @@ import n5 from "../images/n5.svg";
 import { Slide } from "react-reveal";
 import "../style.css";
 import React, { useState, useRef } from "react";
+import Swal from "sweetalert2";
 
 export default function page() {
+  const showAlert = () => {
+    Swal.fire({
+      title: "Sorry!",
+      text: "This is under construction!",
+      icon: "error",
+      confirmButtonText: "OK",
+    });
+  };
+
   const [isContentVisible, setIsContentVisible] = useState(false);
   //const [cardLength, setCardLength] = useState(80);
   const [isCardVisible, setCardVisible] = useState(false);
@@ -77,26 +87,8 @@ export default function page() {
 
   return (
     <div>
-      <div className="bg-[#23272A] ">
+      <div className="bg-[#23272A] lg:h-[550px] ">
         <Header />
-        {/* <div className="lg:flex lg:h-96">
-          <div className="lg:pt-32 ">
-            <h1 className="text-5xl pl-2 lg:pl-16 text-white font-bold selection:text-blue-400 font-serif">
-              UNLEASH MORE FUN WITH NITRO
-            </h1>
-            <h2 className="pt-7 pl-2 lg:pl-16 text-white text-2xl selection:text-blue-400 lg:w-3/4 font-mono">
-              Subscribe to Nitro to upgrade your emoji, personalize your
-              profile, create AI generated images, and so much more.
-            </h2>
-          </div>
-          <div className="lg:pr-40">
-            <Image
-              src={n1}
-              className="h-72 w-72 motion-image justify-end "
-              alt=""
-            />
-          </div>
-        </div> */}
         <div className="lg:flex">
           <div className="lg:w-2/4">
             <h1 className="text-5xl font-bold text-white pl-2 lg:pl-20 pt-20">
@@ -118,9 +110,9 @@ export default function page() {
         </div>
       </div>
 
-      <div className="lg:flex lg:pl-48 pl-6 bg-white">
+      <div className="lg:flex lg:pl-48 pl-6 bg-white" id="nitro">
         <div className="lg:pt-10 pt-16  lg:w-2/3 ">
-          <div class="card lg:w-2/3 w-11/12 bg-gradient-to-tr from-[#007CC2] via-[#1C75D1] to-[#4968E9] shadow-xl animate-pulse border border-blue-500">
+          <div class="card lg:w-2/3 w-11/12 bg-gradient-to-tr from-[#007CC2] via-[#1C75D1] to-[#4968E9] shadow-xl  border border-blue-500">
             <div class="card-body">
               <h2 class="text-center text-4xl pt-4">NITRO BASIC</h2>
 
@@ -199,8 +191,8 @@ export default function page() {
                 </li>
               </ul>
             </div>
-            <div class="card-actions lg:place-content-center pl-10">
-              <button className="butto lg:pr-20">
+            <div class="card-actions lg:place-content-center pl-8 lg:pr-7">
+              <button className="butto " onClick={showAlert}>
                 <svg
                   class="empty"
                   xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +221,7 @@ export default function page() {
 
         {/* second card */}
         <div className="lg:pt-10 pt-16  lg:w-2/3 ">
-          <div class="card lg:w-2/3  w-11/12 bg-gradient-to-tl from-[#8547C6] via-[#B145C2] to-[#B152A4] shadow-xl animate-pulse border border-purple-500">
+          <div class="card lg:w-2/3  w-11/12 bg-gradient-to-tl from-[#8547C6] via-[#B145C2] to-[#B152A4] shadow-xl  border border-purple-500">
             <div class="card-body">
               <h2 class="text-center text-4xl pt-4">NITRO PLUS</h2>
 
@@ -308,8 +300,8 @@ export default function page() {
                 </li>
               </ul>
             </div>
-            <div class="card-actions lg:place-content-center pl-10">
-              <button className="butto lg:pr-20">
+            <div class="card-actions lg:place-content-center pl-8 lg:pr-7">
+              <button className="butto " onClick={showAlert}>
                 <svg
                   class="empty"
                   xmlns="http://www.w3.org/2000/svg"
@@ -342,20 +334,15 @@ export default function page() {
         Popular Nitro Perks
       </h1>
 
-      <div className="lg:flex lg:pl-[200px] font-bold ">
-        <div className=" ml-2 mr-2 card lg:w-[550px] lg:h-[400px]  bg-[#F6F6F6] relative  mt-[50px] transition-transform transform-gpu hover:rotate-3">
+      <div className="lg:flex  font-bold ">
+        <div className=" lg:ml-40 mr-2 card lg:w-[500px] lg:h-[400px]  bg-[#F6F6F6] relative  mt-[50px] transition-transform transform-gpu hover:rotate-3">
           <Slide up>
             <div className="card-body">
               <h2 className="text-center text-2xl text-black">
                 From clips to pics, share away with bigger file uploads
               </h2>
             </div>
-            <Image
-              src={pic1}
-              alt=""
-              className="object-cover lg:ml-[55px] lg:w-[450px] lg:mb-[30px]"
-              draggable="false"
-            />
+            <Image src={pic1} alt="" draggable="false" />
           </Slide>
         </div>
         <div className="ml-2 mr-2 flex card lg:w-[550px] lg:h-[400px]   bg-[#F6F6F6] relative lg:ml-[40px] lg:mt-[50px] mt-[90px] transition-transform transform-gpu hover:rotate-3">
@@ -368,7 +355,7 @@ export default function page() {
             <Image
               src={pic2}
               alt=""
-              className="md:ml-[70px] object-cover lg:ml-[130px] lg:w-[300px] lg:mb-[30px] lg:h-[200px]"
+              className="lg:ml-[80px] lg:w-[400px] lg:mb-[30px] lg:h-[250px] ml-[23px]"
               draggable="false"
             />
           </Slide>
@@ -380,20 +367,15 @@ export default function page() {
           id="toggleCards"
           style={{ display: isCardVisible ? "block" : "none" }}
         >
-          <div className="lg:flex lg:pl-[200px] font-bold  mt-[90px]">
-            <div className="ml-2 mr-2 card lg:w-[550px] lg:h-[400px]  bg-[#F6F6F6] relative  lg:mt-[50px] transition-transform transform-gpu hover:rotate-3">
+          <div className="lg:flex lg:pl-[150px] font-bold  mt-[90px]">
+            <div className="ml-2 mr-2 card lg:w-[500px] lg:h-[400px]  bg-[#F6F6F6] relative  lg:mt-[50px] transition-transform transform-gpu hover:rotate-3">
               <Slide up>
                 <div className="card-body">
                   <h2 className="text-center text-2xl text-black">
                     Hype and meme with emoji anywhere
                   </h2>
                 </div>
-                <Image
-                  src={pic3}
-                  alt=""
-                  className="object-cover lg:ml-[50px] lg:w-[450px] lg:mb-[30px]"
-                  draggable="false"
-                />
+                <Image src={pic3} alt="" draggable="false" />
               </Slide>
             </div>
 
@@ -416,13 +398,13 @@ export default function page() {
         </div>
       )}
 
-      <div className="lg:pt-[100px] lg:pl-[700px] pt-12 pl-28">
+      <div className="lg:pt-[100px] lg:pl-[590px] pt-12 pl-24">
         <button className="buttonp  " onClick={handleCardToggle}>
           {isCardVisible ? "Hide All Perks" : "Show All Perks"}
         </button>
       </div>
 
-      <div className="lg:ml-16 card lg:w-[1300px]  bg-[#F6F6F6] relative  mt-[50px] lg:mt-[50px] ">
+      <div className=" card   bg-[#F6F6F6] relative  mt-[50px] lg:mt-[50px] ">
         <Slide up>
           <div className="card-body">
             <h2 className="text-center font-bold lg:text-6xl text-2xl text-black">
@@ -560,10 +542,16 @@ export default function page() {
             {/*Sixteenth row*/}
             {/*Button*/}
             <div className="flex">
-              <button className="bg-black text-white btn mt-5 lg:ml-[810px] lg:mt-[30px] hover:bg-white hover:text-black">
+              <button
+                onClick={showAlert}
+                className="bg-black text-white btn mt-5 lg:ml-[930px] lg:mt-[30px] hover:bg-white hover:text-black"
+              >
                 Subscribe Basic
               </button>
-              <button className="bg-black text-white btn ml-7 mt-5 lg:ml-[100px] lg:mt-[30px] hover:bg-white hover:text-black">
+              <button
+                onClick={showAlert}
+                className="bg-black text-white btn ml-7 mt-5 lg:ml-[120px] lg:mt-[30px] hover:bg-white hover:text-black"
+              >
                 Subscribe Plus
               </button>
             </div>
@@ -581,7 +569,7 @@ export default function page() {
       <div className="ml-2 mr-2">
         {/*First Question */}
         <div
-          className="card lg:w-[1300px] lg:ml-16 h-[${cardLength}px]  mt-[50px] relative "
+          className="card  lg:ml-16 h-[${cardLength}px]  mt-[50px] relative "
           id="card1"
           style={{
             backgroundColor: isCard1BackgroundVisible ? "lightblue" : "#F6F6F6",
@@ -645,7 +633,7 @@ export default function page() {
         </div>
 
         <div
-          className="card lg:w-[1300px] lg:ml-16 h-[${cardLength}px]  mt-[50px] relative "
+          className="card  lg:ml-16 h-[${cardLength}px]  mt-[50px] relative "
           id="card2"
           style={{
             backgroundColor: isCard2BackgroundVisible ? "lightblue" : "#F6F6F6",
@@ -715,7 +703,7 @@ export default function page() {
           </div>
 
           <div
-            className="card lg:w-[1300px] w-96 lg:ml-2 h-[${cardLength}px]  mt-[50px] relative "
+            className="card lg:w-[1500px] w-96 lg:ml-2 h-[${cardLength}px]  mt-[50px] relative "
             id="card3"
             style={{
               backgroundColor: isCard3BackgroundVisible
@@ -788,7 +776,7 @@ export default function page() {
         </div>
 
         <div
-          className="lg:ml-16 card lg:w-[1300px] h-[${cardLength}px]  mt-[50px] relative "
+          className="lg:ml-16 card  h-[${cardLength}px]  mt-[50px] relative "
           id="card4"
           style={{
             backgroundColor: isCard4BackgroundVisible ? "lightblue" : "#F6F6F6",
@@ -859,11 +847,14 @@ export default function page() {
           <Image src={n2} alt="" />
         </div>
 
-        <div className="text-center lg:ml-[200px] ">
+        <div className="text-center lg:ml-[100px] ">
           <h1 className="font-bold lg:text-5xl text-xl">
             Unleash the fun with Nitro
           </h1>
-          <button className="mt-8 text-xl h-8 btn bg-white text-black hover:text-white rounded-full ">
+          <button
+            onClick={showAlert}
+            className="mt-8 text-xl h-8 btn bg-white text-black hover:text-white rounded-full "
+          >
             Subscribe
           </button>
         </div>
