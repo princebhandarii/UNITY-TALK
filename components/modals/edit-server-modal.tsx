@@ -88,6 +88,9 @@ export const EditServerModal = () => {
           <DialogDescription className="text-center text-zinc-500">
             Give your server a personality with a name and an image. You can always change it later.
           </DialogDescription>
+           <DialogDescription className="text-center text-blue-600 pt-2">
+         <a href="/AI">Your dream server images make real </a> 
+          </DialogDescription>
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
