@@ -6,6 +6,7 @@ import { FiDownload } from "react-icons/fi"; // Import the download icon
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../style.css";
+import { SocketProvider } from "@/components/providers/socket-provider";
 
 export default function Page() {
   const [image_url, setImage_url] = useState("/");
@@ -61,6 +62,7 @@ export default function Page() {
   };
 
   return (
+     <SocketProvider disabled>
     <div className="bg-[#23272A]">
       <Header />
 
@@ -120,5 +122,6 @@ export default function Page() {
         <Footer />
       </div>
     </div>
+ </SocketProvider>
   );
 }
