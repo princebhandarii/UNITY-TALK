@@ -10,9 +10,9 @@ import Lib from "../images/Library.svg";
 
 import myVideo from "../images/DiscordVideo.mp4";
 
-import Privacy from "../images/Privacy.svg";
+import Privacy from "../images/Privacy.png";
 import parent from "../images/parent.svg";
-import transparncy from "../images/transparncy.svg";
+import transparncy from "../images/transparncy.jpeg";
 import safetys from "../images/safetys.svg";
 import policy from "../images/policy.svg";
 import Video from "next-video";
@@ -206,7 +206,7 @@ export default function page() {
             </p>
           </div>
           <div className="lg:pl-28 pt-2 lg:pb-8 m-2">
-            <Image alt="" className="h-54 w-54 rounded" src={Privacy} />
+            <Image alt="" className="h-72 w-max rounded" src={Privacy} />
           </div>
           {/* this is large  */}
           <div className="lg:w-2/4 pl-5 lg:pl-12 pt-12 md:block hidden">
@@ -255,7 +255,7 @@ export default function page() {
             </p>
           </div>
           <div className="lg:pl-28 pt-2 lg:pb-8 m-2">
-            <Image alt="" className="h-54 w-54 rounded" src={transparncy} />
+            <Image alt="" className="h-72 w-max rounded" src={transparncy} />
           </div>
           {/* this is large  */}
           <div className="lg:w-2/4 pl-5 lg:pl-12 pt-12 md:block hidden">
