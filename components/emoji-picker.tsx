@@ -1,4 +1,5 @@
 "use client";
+
 import { Smile } from "lucide-react";
 import Picker from "@emoji-mart/react";
 import data from "@emoji-mart/data";
@@ -14,7 +15,9 @@ interface EmojiPickerProps {
   onChange: (value: string) => void;
 }
 
-export const EmojiPicker = ({ onChange }: EmojiPickerProps) => {
+export const EmojiPicker = ({
+  onChange,
+}: EmojiPickerProps) => {
   const { resolvedTheme } = useTheme();
 
   return (
@@ -32,9 +35,9 @@ export const EmojiPicker = ({ onChange }: EmojiPickerProps) => {
         <Picker
           theme={resolvedTheme}
           data={data}
-          onSelect={(emoji: any) => onChange(emoji.native)}
+          onEmojiSelect={(emoji: any) => onChange(emoji.native)}
         />
       </PopoverContent>
     </Popover>
-  );
-};
+  )
+}
