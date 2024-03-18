@@ -1,8 +1,6 @@
 "use client";
-
-import { Smile } from "lucide-react";
-import Picker from "@emoji-mart/react";
-import data from "@emoji-mart/data";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { useTheme } from "next-themes";
 
 import {
@@ -18,7 +16,22 @@ interface EmojiPickerProps {
 export const EmojiPicker = ({
   onChange,
 }: EmojiPickerProps) => {
+  const [isPickerLoaded, setIsPickerLoaded] = useState(false);
   const { resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("https://cdn.jsdelivr.net/npm/@emoji-mart/data/sets/14/native.json");
+      const emojiData = await response.json();
+      return emojiData;
+    };
+
+    fetchData().then(() => {
+      setIsPickerLoaded(true);
+    });
+  }, []);
+
+  const Picker = dynamic(() => import("@emoji-mart/react"), { ssr: false });
 
   return (
     <Popover>
@@ -32,12 +45,16 @@ export const EmojiPicker = ({
         sideOffset={40}
         className="bg-transparent border-none shadow-none drop-shadow-none mb-16"
       >
-        <Picker
-          theme={resolvedTheme}
-          data={data}
-          onEmojiSelect={(emoji: any) => onChange(emoji.native)}
-        />
+        {isPickerLoaded && (
+          <Picker
+            theme={resolvedTheme}
+            data={data}
+            onEmojiSelect={(emoji: any) => onChange(emoji.native)}
+          />
+        )}
+        {/* Use a hidden div to ensure Picker loads before displaying */}
+        <div className="hidden"><Picker /></div>
       </PopoverContent>
     </Popover>
-  )
-}
+  );
+};
