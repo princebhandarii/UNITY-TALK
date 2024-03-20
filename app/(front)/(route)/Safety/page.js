@@ -151,7 +151,7 @@ export default function page() {
         <iframe
           width="960"
           height="515"
-          src="https://www.youtube.com/embed/LvtpbOarcWE"
+          src="https://www.youtube.com/embed/_2lQr3UQfPk?si=pUHSzeA0Ay6yzrn6"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -165,7 +165,7 @@ export default function page() {
       {/* this is for mobile */}
       <div className="lg:hidden justify-center flex pt-5">
         <iframe
-          src="https://www.youtube.com/embed/LvtpbOarcWE"
+          src="https://www.youtube.com/embed/_2lQr3UQfPk?si=pUHSzeA0Ay6yzrn6"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
