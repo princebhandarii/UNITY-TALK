@@ -21,7 +21,7 @@ export default function Download() {
         <div className="lg:flex shrink-0 mr-4">
           <Image
             src={vc}
-            className="object-contain py-5 animate-bounce infinite pt-20 "
+            className="lg:h-96 lg:w-96 py-5 animate-bounce infinite pt-20 "
             alt=""
           />
           <div className="pt-2">
