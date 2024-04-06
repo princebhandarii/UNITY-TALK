@@ -329,7 +329,7 @@ export default function page() {
             <p className="lg:text-2xl pt-2 pl-5 lg:pl-28">
               <Link
                 target="_blank"
-                href="https://i-notebooks-bice.vercel.app/login"
+                href="https://unity-book.vercel.app/login"
                 className="flex text-blue-400 hover:text-blue-800 text-3xl font-bold"
               >
                 <span className="mr-2">Explore Now</span>
