@@ -83,8 +83,8 @@ export default function Page() {
               />
             </div>
             {loading && (
-              <div className="loading-bars pl-8">
-                <div className="loading-text text-2xl">Loading....</div>
+              <div className="loading-bars pl-8 text-white">
+                <div className="loading-text text-2xl text-white">Loading....</div>
               </div>
             )}
           </div>
