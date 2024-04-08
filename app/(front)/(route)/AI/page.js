@@ -66,10 +66,10 @@ export default function Page() {
     <div className="bg-[#23272A]">
       <Header />
 
-      <div className="ai-image-generator flex flex-col items-center justify-center ">
+      <div className="ai-image-generator flex flex-col items-center justify-center bg-white ">
         <div className="header">
           <p className="text-3xl font-bold">
-            AI Image <span className="text-blue-500">Generator</span>
+          AI Image <span className="text-blue-500">Generator</span>
           </p>
           <div
             className={`img-loading ${loading ? "loading-border" : ""} pt-4`}
