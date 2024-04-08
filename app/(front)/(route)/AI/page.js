@@ -96,7 +96,7 @@ export default function Page() {
                 download="generated_image.jpg"
                 onClick={handleDownload}
               >
-                <FiDownload size={30} />
+                <FiDownload size={30} className="text-white" />
               </a>
             </div>
           )}
