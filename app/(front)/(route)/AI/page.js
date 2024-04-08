@@ -66,10 +66,10 @@ export default function Page() {
     <div className="bg-[#23272A]">
       <Header />
 
-      <div className="ai-image-generator flex flex-col items-center justify-center bg-white ">
+      <div className="ai-image-generator flex flex-col items-center justify-center  ">
         <div className="header">
           <p className="text-3xl font-bold">
-          AI Image <span className="text-blue-500">Generator</span>
+       <span className="text-white">   AI Image</span> <span className="text-blue-500">Generator</span>
           </p>
           <div
             className={`img-loading ${loading ? "loading-border" : ""} pt-4`}
@@ -105,7 +105,7 @@ export default function Page() {
           <input
             type="text"
             ref={inputRef}
-            className="search-input p-2 border rounded w-72"
+            className="search-input p-2 border rounded w-72 text-white"
             placeholder="what u want to see?"
           />
           <div
