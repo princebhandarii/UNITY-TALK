@@ -16,13 +16,40 @@ import game from "../images/game.png";
 import call from "../images/call.png";
 import ai from "../images/ai3.png";
 import privcy from "../images/privcy.png";
+import Swal from "sweetalert2";
 
 import "../style.css";
+
 export default function Page() {
   const form = useRef();
+  const [formData, setFormData] = useState({
+    email_id: "",
+    user_name: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email_id)) {
+      return Swal.fire("Error!", "Please enter a valid email address", "error");
+    }
+    // Check if all fields are filled
+    for (const key in formData) {
+      if (!formData[key]) {
+        return Swal.fire("Error!", "Please fill in all fields", "error");
+      }
+    }
 
     emailjs
       .sendForm(
@@ -34,11 +61,25 @@ export default function Page() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Email sent successfully");
+          Swal.fire("Success!", "Email sent successfully", "success");
+          setFormData({
+            email_id: "",
+            user_name: "",
+            subject: "",
+            message: "",
+          });
           e.target.reset();
         },
         (error) => {
           console.log(error.text);
+          Swal.fire("Error!", "Failed to send email", "error");
+          setFormData({
+            email_id: "",
+            user_name: "",
+            subject: "",
+            message: "",
+          });
+          e.target.reset();
         }
       );
   };
@@ -80,7 +121,6 @@ export default function Page() {
           <h2 className="text-4xl lg:text-6xl font-bold  text-white fade-in-text font-mono">
             Help Center
           </h2>
-
           <p className="text-white font-mono text-xl  pt-3 fade-in-text  lg:pl-40 lg:pr-40">
             Unity Talk's Help Center revolutionizes support through an
             innovative email-centric approach, turning your inbox into a dynamic
@@ -90,7 +130,6 @@ export default function Page() {
             challenges.
           </p>
         </div>
-
         <div className="flex pt-5">
           <animated.div
             className="mr-auto hidden md:block"
@@ -109,17 +148,17 @@ export default function Page() {
         </h2>
         <p className="text-5xl">🤖</p>
       </div>
-
-      <div class=" justify-center pt-10">
-        <div class="mx-auto lg:w-1/2">
+      <div className=" justify-center pt-10">
+        <div className="mx-auto lg:w-1/2">
           <iframe
-            
+            // src="https://www.chatbase.co/chatbot-iframe/QsCZb9UgTiq-AHibHA-8x"
+            // raj
             src="https://www.chatbase.co/chatbot-iframe/Yv4cewH6uBfgRWbADXimM"
-         
+            //prince
             title="Unity Talk ChatBot"
             width="100%"
             style={{ height: "100%", minHeight: "700px" }}
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
         </div>
       </div>
@@ -145,28 +184,39 @@ export default function Page() {
               </h2>
               <form ref={form} onSubmit={sendEmail}>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Your Email"
                   name="email_id"
+                  value={formData.email_id}
+                  onChange={handleChange}
                   className="input input-bordered w-full text-lg mt-[10px] text-black fade-in-text"
+                  required
                 />
                 <input
                   type="text"
-                  u
                   placeholder="Your Name"
                   name="user_name"
+                  value={formData.user_name}
+                  onChange={handleChange}
                   className="input input-bordered w-full text-lg mt-[10px] text-black fade-in-text"
+                  required
                 />
                 <input
                   type="text"
                   placeholder="Your Subject"
                   name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="input input-bordered w-full text-lg mt-[10px] text-black fade-in-text"
+                  required
                 />
                 <textarea
                   placeholder="Your Message"
                   name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="input input-bordered w-full h-[100px] text-lg mt-[10px] text-black fade-in-text"
+                  required
                 ></textarea>
                 <input
                   type="submit"
@@ -231,31 +281,31 @@ export default function Page() {
         <div className="pt-[500px] lg:hidden ">
           <div className="h-96 carousel carousel-vertical rounded-box relative">
             <div className="carousel-item h-full group relative">
-              <Image src={chat} />
+              <Image src={chat} alt="" />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Chat
               </div>
             </div>
             <div className="carousel-item h-full group relative">
-              <Image src={ai} />
+              <Image src={ai} alt="" />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 AI
               </div>
             </div>
             <div className="carousel-item h-full group relative">
-              <Image src={call} />
+              <Image src={call} alt="" />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Call
               </div>
             </div>
             <div className="carousel-item h-full group relative">
-              <Image src={game} />
+              <Image src={game} alt="" />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Game
               </div>
             </div>
             <div className="carousel-item h-full group relative">
-              <Image src={privcy} />
+              <Image src={privcy} alt="" />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Privacy
               </div>
