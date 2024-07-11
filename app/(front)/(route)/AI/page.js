@@ -11,7 +11,7 @@ import "../style.css";
 export default function Page() {
   const [image_url, setImage_url] = useState("/");
   const [loading, setLoading] = useState(false);
-  const [imageGenerated, setImageGenerated] = useState(false); // Track whether the image is generated
+  const [imageGenerated, setImageGenerated] = useState(false); // Track whether the image is generated.
   let inputRef = useRef(null);
 
   const imageGenerator = async () => {
