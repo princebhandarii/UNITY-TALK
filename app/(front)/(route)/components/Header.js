@@ -150,7 +150,7 @@ export default function Header() {
       </div>
       <div className="navbar-end">
         <div>
-          <Link href="https://unity-talk.vercel.app/">
+          <Link href="/">
             <button
               className="button2 md:w-40 lg:w-48 xl:w-56"
               style={{ height: "50px", width: "140px" }}
